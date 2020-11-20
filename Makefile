@@ -4,3 +4,7 @@ build:
 
 clean:
 	rm -rf ./output
+
+run: build
+	cd ./output/ && ./producer
+	cd ./output/ && ./consumer
